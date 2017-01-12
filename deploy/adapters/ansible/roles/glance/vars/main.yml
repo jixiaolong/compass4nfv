@@ -11,3 +11,5 @@ packages_noarch:
   - python-glanceclient
 
 services_noarch: []
+
+nfs_server: "{{ hostvars[groups['nfs'][0]]['ansible_mgmt']['ipv4']['address'] }}"
